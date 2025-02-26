@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web E-Commerce</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="">
+                <img class="w-32" src="/dist/images/logo.svg" alt="">
+            </a>
+
+            <!-- Search Bar -->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+            </div>
+
+            <!-- Icons -->
+            <div class="flex items-center space-x-4">
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wishlist</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>  
+                    </div>
+                    <div class="text-xs leading-3">Profile</div>
+                </a>
+            </div> 
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!-- All Category -->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Categories</span>
+
+                <div class="absolute w-full left-0 top-full bg-white shadow-sm py-2 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-200 invisible group-hover:visible">
+                    <!-- Single Category -->
+                     <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img class="w-5 h-5 object-contain" src="/dist/images/icons/sofa.svg" alt="Gambar Sofa">
+                        <span class="ml-5 text-gray-600 text-sm">Sofa</span>
+                     </a>
+                    <!-- Single Category End -->
+
+                    <!-- Single Category -->
+                     <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img class="w-5 h-5 object-contain" src="/dist/images/icons/bed-2.svg" alt="Gambar Sofa">
+                        <span class="ml-5 text-gray-600 text-sm">Bed</span>
+                     </a>
+                    <!-- Single Category End -->
+                     
+                    <!-- Single Category -->
+                     <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img class="w-5 h-5 object-contain" src="/dist/images/icons/office.svg" alt="Gambar Sofa">
+                        <span class="ml-5 text-gray-600 text-sm">Office</span>
+                     </a>
+                    <!-- Single Category End -->
+
+                    <!-- Single Category -->
+                     <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img class="w-5 h-5 object-contain" src="/dist/images/icons/phone.svg" alt="Gambar Sofa">
+                        <span class="ml-5 text-gray-600 text-sm">Electronics</span>
+                     </a>
+                    <!-- Single Category End -->
+
+                    <!-- Single Category -->
+                     <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img class="w-5 h-5 object-contain" src="/dist/images/icons/terrace.svg" alt="Gambar Sofa">
+                        <span class="ml-5 text-gray-600 text-sm">Outdoor</span>
+                     </a>
+                    <!-- Single Category End -->
+                </div>
+            </div>
+            <!-- All Category End -->
+
+            <!-- Navbar Links -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">Contact Us</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">About Us</a>
+                </div>
+                <a href="" class="text-gray-200 hover:text-white transition">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Breadcrumb -->
+     <div class="container py-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-gray-400 text-sm">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Shop</p>
+     </div>
+    <!-- Breadcrumb End -->
+
+        <!-- Footer -->
+        <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+            <div class="container grid grid-cols-3">
+                <!-- Footer Text -->
+                <div class="col-span-1 space-y-8">
+                    <img class="w-30" src="images/logo.svg" alt="">
+                    <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, adipisci?</p>
+                    <div class="flex gap-x-4">
+                        <a class="text-gray-600 hover:text-gray-700" href="">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a class="text-gray-600 hover:text-gray-700" href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="text-gray-600 hover:text-gray-700" href="">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                        <a class="text-gray-600 hover:text-gray-700" href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Footer Links -->
+                 <div class="col-span-2 grid grid-cols-2 gap-8">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">solutions</h3>
+                            <div class="mt-4 space-y-4">
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Marketing</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Analytic</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Commerce</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Insights</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Information</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">solutions</h3>
+                            <div class="mt-4 space-y-4">
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Marketing</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Analytic</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Commerce</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Insights</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">solutions</h3>
+                            <div class="mt-4 space-y-4">
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Marketing</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Analytic</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Commerce</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Insights</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Information</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">solutions</h3>
+                            <div class="mt-4 space-y-4">
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Marketing</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Analytic</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Commerce</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Insights</a>
+                                <a class="text-base text-gray-500 hover:text-gray-900 block" href="">Information</a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+    
+            </div>
+         </footer>
+        <!-- Footer End -->
+    
+        <!-- Copyright -->
+         <div class="bg-gray-800 py-4">
+            <div class="container flex items-center justify-between">
+                <p class="text-white">&copy; IDNCART - All Rights Reserved</p>
+                <img class="h-5" src="images/methods.png" alt="">
+            </div>
+         </div>
+        <!-- Copyright End -->
+    </body>
+    </html>
