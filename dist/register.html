@@ -119,21 +119,25 @@
                     <a href="" class="text-gray-200 hover:text-white transition">Contact Us</a>
                     <a href="" class="text-gray-200 hover:text-white transition">About Us</a>
                 </div>
-                <a href="" class="text-gray-200 hover:text-white transition">Login</a>
+                <a href="" class="text-gray-200 hover:text-white transition">Register</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
-    <!-- Login -->
+    <!-- Register -->
      <div class="container py-16">
         <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
             <div class="flex flex-col justify-center items-center">
-                <h2 class=" uppercase text-2xl font-medium mb-1">Login</h2>
-                <p class=" text-gray-600 text-sm mb-6">Login if u are returning customer</p>
+                <h2 class=" uppercase text-2xl font-medium mb-1">Register</h2>
+                <p class=" text-gray-600 text-sm mb-6">Register to create a new account</p>
             </div>
             <form action="">
                 <div class="space-y-4">
+                    <div>
+                        <label for="name" class="text-gray-600 mb-2 block">Fullname <span class="text-primary">*</span></label>
+                        <input type="text" name="name" id="name" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0" placeholder="Your Name">
+                    </div>
                     <div>
                         <label for="email" class="text-gray-600 mb-2 block">Email Addres <span class="text-primary">*</span></label>
                         <input type="email" name="email" id="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0" placeholder="someone@gmail.com">
@@ -142,21 +146,24 @@
                         <label for="password" class="text-gray-600 mb-2 block">Password <span class="text-primary">*</span></label>
                         <input type="password" name="password" id="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0" placeholder="password123">
                     </div>
+                    <div>
+                        <label for="confirm__password" class="text-gray-600 mb-2 block">Confirm Password <span class="text-primary">*</span></label>
+                        <input type="password" name="confirm__password" id="confirm__password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:border-primary focus:ring-0" placeholder="password123">
+                    </div>
                     <div class="flex items-center justify-between">
                        <div class="flex items-center">
                         <input type="checkbox" class="text-primary focus:ring-0 rounded cursor-pointer">
-                        <label for="" class="text-gray-600 text-sm ml-2 cursor-pointer">Remember Me</label>
+                        <label for="" class="text-gray-600 text-sm ml-2 cursor-pointer">I have read and agree to the <a href="" class="text-primary hover:text-red-700 transition">Terms & Conditions</a> </label>
                        </div>
-                       <a href="" class="text-primary hover:text-red-700 transition text-sm">Forgot Password?</a>
                     </div>
                     <div class="mt-4">
-                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary hover:bg-transparent hover:text-primary rounded transition ">Login</button>
+                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary hover:bg-transparent hover:text-primary rounded transition ">Register</button>
                     </div>
                 </div>
             </form>
-            <!-- Login With -->
+            <!-- Register With -->
             <div class="mt-6 flex justify-center relative">
-                <div class="uppercase text-gray-600 px-3 bg-white z-10 relative">Or Login With</div>
+                <div class="uppercase text-gray-600 px-3 bg-white z-10 relative">Or Register With</div>
                 <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
             </div>
             <div class="flex mt-4 gap-4">
@@ -167,10 +174,10 @@
                     <i class="fa-brands fa-google"></i> Google    
                 </a>
             </div>
-            <p class="mt-4 text-gray-600 text-center ">Dont have an account? <a href="register.html" class="text-primary hover:text-red-700 transition">Register now!</a></p>
+            <p class="mt-4 text-gray-600 text-center ">Already have an account? <a href="login.html" class="text-primary hover:text-red-700 transition">Login now!</a></p>
         </div>
      </div>
-    <!-- Login End -->
+    <!-- Register End -->
 
         <!-- Footer -->
         <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
